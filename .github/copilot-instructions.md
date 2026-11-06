@@ -13,6 +13,8 @@ introduction, functionality, installation, and usage.
 - Use synthetic API responses in tests. Never commit credentials, tokens, private
   API captures, or personal account/location data.
 - Keep shared screenshot assets in `images/` and anonymize real identifiers.
+  Use absolute raw GitHub image URLs in both Markdown pages so HACS can render
+  them. Pin URLs to the asset commit and update them when screenshots change.
   Keep `README.md` and `info.md` aligned when user-facing functionality changes.
 - Use the development commands below for relevant changes and keep user-facing
   documentation aligned with the implementation.

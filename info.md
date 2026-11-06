@@ -25,11 +25,11 @@ the first screen shows only the serial number.
 
 ### Choose the meters you want to use
 
-![Meter selection with cold-water, hot-water, and heat meters](images/meter-selection.png)
+![Meter selection with cold-water, hot-water, and heat meters](https://raw.githubusercontent.com/f0x052/ha-odectyvodomeru/5d56416f1b31b45925bb8d436cc7d08f61780edc/images/meter-selection.png)
 
 ### See your selected meters as Home Assistant devices
 
-![Selected cold-water, heat, and hot-water devices](images/devices.png)
+![Selected cold-water, heat, and hot-water devices](https://raw.githubusercontent.com/f0x052/ha-odectyvodomeru/5d56416f1b31b45925bb8d436cc7d08f61780edc/images/devices.png)
 
 These are cropped screenshots from development builds, with real meter
 identifiers anonymized. The device screenshot predates **Meter information**;

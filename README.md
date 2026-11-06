@@ -37,13 +37,13 @@ the attribute list.
 
 Choose the cold-water, hot-water, and heat meters you want to include.
 
-![Meter selection with cold-water, hot-water, and heat meters](images/meter-selection.png)
+![Meter selection with cold-water, hot-water, and heat meters](https://raw.githubusercontent.com/f0x052/ha-odectyvodomeru/5d56416f1b31b45925bb8d436cc7d08f61780edc/images/meter-selection.png)
 
 ### Registered devices
 
 Your selected meters appear as individual Home Assistant devices.
 
-![Selected cold-water, heat, and hot-water devices](images/devices.png)
+![Selected cold-water, heat, and hot-water devices](https://raw.githubusercontent.com/f0x052/ha-odectyvodomeru/5d56416f1b31b45925bb8d436cc7d08f61780edc/images/devices.png)
 
 These screenshots were cropped from development builds and real meter
 identifiers were anonymized. The device screenshot shows an earlier release;
