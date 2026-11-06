@@ -26,7 +26,7 @@ Home Assistant **2026.10.4**.
 
 ## Current milestone: meter readings and hourly polling
 
-Version 0.5.0 provides UI setup, username/password validation, duplicate-account
+Version 0.5.1 provides UI setup, username/password validation, duplicate-account
 protection, startup authentication, reauthentication, meter selection, device
 registration, cumulative reading sensors, location details, and hourly polling. Login verifies both
 `POST /api/login_check` and the authenticated `GET /api/user/profile` endpoint
@@ -88,12 +88,14 @@ custom-repository installation, documentation, and issue links.
 
 ### Integration icon
 
-Version 0.4.1 bundles 256px and 512px transparent icons in `brand/`, supported
+Version 0.5.1 bundles explicit light and dark 256px and 512px transparent icons
+in `brand/`, supported
 natively by Home Assistant 2026.3 and newer. They use the Renova symbol displayed
 by the portal. The website does not currently serve a usable favicon, so the
 symbol was extracted from its [full logo](https://odectyvodomeru.cz/img/renova/full-logo.png)
 and the white background removed. Home Assistant uses the square icon as the logo
-fallback, including in dark mode.
+fallback. Explicit `dark_icon.png` and `dark_icon@2x.png` assets avoid depending
+on the light-icon fallback for dark-mode requests.
 
 The portal's brand artwork belongs to its respective owner, is not covered by
 this repository's MIT license, and is used only to identify the service; this
@@ -121,6 +123,8 @@ the browser if the previous placeholder is cached.
          brand/
            icon.png
            icon@2x.png
+           dark_icon.png
+           dark_icon@2x.png
          config_flow.py
          const.py
          coordinator.py
@@ -147,7 +151,7 @@ restart and check **Settings > System > Logs** for `odectyvodomeru`.
 
 1. Copy the updated `custom_components/odectyvodomeru` folder over the installed
    folder and restart Home Assistant. Do not remove your existing integration.
-   Confirm the integration page shows **0.5.0**, not an older installed version.
+   Confirm the integration page shows **0.5.1**, not an older installed version.
    Under **Services**, the entry should include your login email unless you
    previously gave it a custom name.
 2. Open **Settings > Devices & services > Odecty vodomeru** and choose

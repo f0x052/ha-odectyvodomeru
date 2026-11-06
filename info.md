@@ -67,6 +67,11 @@ No YAML configuration is needed. Use **Configure** on the integration to change
 your selection later. Keep the existing integration when upgrading to preserve
 its account, selection, and entity identities.
 
+Light and dark integration icons are bundled, including high-resolution versions.
+If an icon remains missing after upgrading, restart Home Assistant and hard-refresh
+the browser. See the [README troubleshooting guidance](README.md#missing-integration-icon)
+for file and authentication checks; never share the token in a brands image URL.
+
 ## Before you start
 
 - Internet access to `api.goliash.cz` and a working portal account are required.

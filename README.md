@@ -120,6 +120,19 @@ selection, and existing entity identities are retained.
 For an installation managed through HACS, download the
 update through HACS instead of copying files manually, then restart Home Assistant.
 
+### Missing integration icon
+
+The integration bundles both light and dark icons, including high-resolution
+versions. If the icon is missing after an update, ensure the entire `brand/`
+folder was installed, restart Home Assistant, then hard-refresh the browser.
+It should contain `icon.png`, `icon@2x.png`, `dark_icon.png`, and
+`dark_icon@2x.png`.
+
+The brands API uses authenticated image URLs. An HTTP 401 or 403 is an
+authentication/token problem rather than a missing file; reload the Home
+Assistant frontend to obtain a fresh image URL. Do not share the full URL's
+`token` query parameter.
+
 ## Consumption graphs
 
 Cumulative readings support Home Assistant's long-term statistics for daily,
