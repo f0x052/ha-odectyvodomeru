@@ -5,7 +5,8 @@
     "@f0x052"
   ],
   "config_flow": true,
-  "documentation": "https://git.home.redfoxstudio.sk/fox/ha-odectyvodomeru",
+  "documentation": "https://github.com/f0x052/ha-odectyvodomeru",
+  "issue_tracker": "https://github.com/f0x052/ha-odectyvodomeru/issues",
   "integration_type": "service",
   "iot_class": "cloud_polling",
   "requirements": [],

@@ -5,7 +5,7 @@ An unofficial Home Assistant custom integration for
 readings in Home Assistant using the same account you use on the portal.
 
 Developed for **Home Assistant 2026.10.4**. This is a custom integration, **not an
-add-on**. Installation through HACS is not currently configured.
+add-on**. HACS metadata is included for installation as a custom repository.
 
 ## Features
 
@@ -31,7 +31,36 @@ To see location details, open **Meter information**, select **⋮ > Details**, a
 look under **Attributes**. The initial dialog displays the serial number, not
 the attribute list.
 
+## Screenshots
+
+### Meter selection
+
+Choose the cold-water, hot-water, and heat meters you want to include.
+
+![Meter selection with cold-water, hot-water, and heat meters](images/meter-selection.png)
+
+### Registered devices
+
+Your selected meters appear as individual Home Assistant devices.
+
+![Selected cold-water, heat, and hot-water devices](images/devices.png)
+
+These screenshots were cropped from development builds and real meter
+identifiers were anonymized. The device screenshot shows an earlier release;
+the current version adds **Meter information**, for three entities per device.
+
 ## Installation
+
+### HACS
+
+Use the public GitHub repository as a HACS custom repository:
+
+1. Open HACS and choose **⋮ > Custom repositories**.
+2. Enter `https://github.com/f0x052/ha-odectyvodomeru` and select **Integration**.
+3. Add the repository, find **Odecty vodomeru**, and download it.
+4. Restart Home Assistant, then complete the setup described below.
+
+### Manual
 
 1. Make a Home Assistant backup.
 2. Download or clone this repository.
@@ -87,6 +116,9 @@ To update, back up Home Assistant, replace the installed
 `custom_components/odectyvodomeru` folder with the updated copy, and restart Home
 Assistant. **Do not remove the integration first**; your account, meter
 selection, and existing entity identities are retained.
+
+For an installation managed through HACS, download the
+update through HACS instead of copying files manually, then restart Home Assistant.
 
 ## Consumption graphs
 

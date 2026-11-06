@@ -1,0 +1,6 @@
+{
+  "name": "Odecty vodomeru",
+  "content_in_root": false,
+  "render_readme": false,
+  "homeassistant": "2026.10.4"
+}

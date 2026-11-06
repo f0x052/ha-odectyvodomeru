@@ -1,8 +1,8 @@
 # Copilot instructions
 
 Use this file as the repository's technical context and manual-verification
-reference. Keep the root `README.md` focused on the project introduction,
-functionality, installation, and usage.
+reference. Keep the root `README.md` and `info.md` focused on the project
+introduction, functionality, installation, and usage.
 
 - Follow the existing custom integration structure in
   `custom_components/odectyvodomeru` and keep English/Czech translations complete.
@@ -12,6 +12,8 @@ functionality, installation, and usage.
   are not automatic resets, and no historical readings are fabricated.
 - Use synthetic API responses in tests. Never commit credentials, tokens, private
   API captures, or personal account/location data.
+- Keep shared screenshot assets in `images/` and anonymize real identifiers.
+  Keep `README.md` and `info.md` aligned when user-facing functionality changes.
 - Use the development commands below for relevant changes and keep user-facing
   documentation aligned with the implementation.
 
@@ -77,7 +79,10 @@ malformed, and out-of-order readings make only the affected meter unavailable,
 never zero. A valid zero is still reported. Credentials/tokens are never logged.
 
 This is an integration, not an add-on. It is not installed from the add-on store;
-HACS installation is not configured yet.
+HACS metadata is provided in the root `hacs.json`, alongside `info.md`.
+The primary repository and local `origin` are
+`https://github.com/f0x052/ha-odectyvodomeru`. Use that public GitHub URL for HACS
+custom-repository installation, documentation, and issue links.
 
 ### Integration icon
 
