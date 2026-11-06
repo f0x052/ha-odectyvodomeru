@@ -1,0 +1,86 @@
+{
+  "title": "Odecty vodomeru",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Sign in to Odecty vodomeru",
+        "description": "Use your odectyvodomeru.cz credentials. Next, choose which meters to add with cumulative reading sensors.",
+        "data": {
+          "username": "Username / email",
+          "password": "Password"
+        }
+      },
+      "meters": {
+        "title": "Select meters",
+        "description": "Select at least one meter to add as a device with reading sensors. Nothing is selected automatically.",
+        "data": {
+          "meters": "Meters to use"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Sign in again",
+        "description": "Enter valid credentials for the same odectyvodomeru.cz account.",
+        "data": {
+          "username": "Username / email",
+          "password": "Password"
+        }
+      }
+    },
+    "error": {
+      "access_restricted": "The portal denied access to this account. Check that you can sign in on odectyvodomeru.cz.",
+      "cannot_connect": "Cannot connect to the portal. Check your internet connection and try again.",
+      "invalid_auth": "The username or password was rejected.",
+      "invalid_response": "The portal returned an unexpected response. Its API may have changed.",
+      "rate_limited": "The portal is limiting requests. Wait before trying again.",
+      "no_meters": "No supported active water or heat meters were found. Check your account access on the portal, then try again.",
+      "select_meters": "Select at least one meter.",
+      "invalid_selection": "Select only meters from the available list."
+    },
+    "abort": {
+      "already_configured": "This account is already configured.",
+      "reauth_successful": "Authentication was updated successfully.",
+      "unique_id_mismatch": "Sign in with the same account that was originally configured."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Select meters",
+        "description": "Choose the meters to use. Existing choices are checked. Saving adds selected devices and sensors and removes deselected ones. If discovery failed, submit again to retry.",
+        "data": {
+          "meters": "Meters to use"
+        }
+      }
+    },
+    "error": {
+      "access_restricted": "The portal denied access to this account.",
+      "invalid_auth": "The username or password was rejected.",
+      "cannot_connect": "Cannot connect to the portal. Submit again to retry.",
+      "invalid_response": "The portal returned an unexpected response. Its API may have changed.",
+      "rate_limited": "The portal is limiting requests. Wait before trying again.",
+      "no_meters": "No supported active water or heat meters were found. Check your account access, then submit again to retry.",
+      "select_meters": "Select at least one meter.",
+      "invalid_selection": "Select only meters from the available list."
+    },
+    "abort": {
+      "reauth_required": "Sign in again using the integration's reauthentication prompt, then reopen Configure.",
+      "unique_id_mismatch": "The portal returned a different account. Sign in with the originally configured account."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "reading": {"name": "Meter reading"},
+      "last_reading": {"name": "Last reading"},
+      "information": {"name": "Meter information"}
+    }
+  },
+  "selector": {
+    "meter_type": {
+      "options": {
+        "cold": "Cold water",
+        "hot": "Hot water",
+        "cal": "Heat meter"
+      }
+    }
+  }
+}

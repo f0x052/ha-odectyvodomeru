@@ -1,0 +1,86 @@
+{
+  "title": "Odečty vodoměrů",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Přihlášení k Odečtům vodoměrů",
+        "description": "Použijte přihlašovací údaje pro odectyvodomeru.cz. Poté vyberete měřidla se senzory celkových odečtů.",
+        "data": {
+          "username": "Uživatelské jméno / e-mail",
+          "password": "Heslo"
+        }
+      },
+      "meters": {
+        "title": "Výběr měřidel",
+        "description": "Vyberte alespoň jedno měřidlo, které bude přidáno jako zařízení se senzory odečtů. Žádné není vybráno automaticky.",
+        "data": {
+          "meters": "Používaná měřidla"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Opětovné přihlášení",
+        "description": "Zadejte platné přihlašovací údaje ke stejnému účtu na odectyvodomeru.cz.",
+        "data": {
+          "username": "Uživatelské jméno / e-mail",
+          "password": "Heslo"
+        }
+      }
+    },
+    "error": {
+      "access_restricted": "Portál zamítl přístup k tomuto účtu. Ověřte, že se můžete přihlásit na odectyvodomeru.cz.",
+      "cannot_connect": "Nelze se připojit k portálu. Zkontrolujte připojení k internetu a zkuste to znovu.",
+      "invalid_auth": "Uživatelské jméno nebo heslo bylo odmítnuto.",
+      "invalid_response": "Portál vrátil neočekávanou odpověď. Jeho API se mohlo změnit.",
+      "rate_limited": "Portál omezuje počet požadavků. Před dalším pokusem chvíli počkejte.",
+      "no_meters": "Nebyla nalezena žádná podporovaná aktivní měřidla vody nebo tepla. Ověřte přístup k účtu na portálu a zkuste to znovu.",
+      "select_meters": "Vyberte alespoň jedno měřidlo.",
+      "invalid_selection": "Vyberte pouze měřidla z dostupného seznamu."
+    },
+    "abort": {
+      "already_configured": "Tento účet je již nakonfigurován.",
+      "reauth_successful": "Přihlašovací údaje byly úspěšně aktualizovány.",
+      "unique_id_mismatch": "Přihlaste se ke stejnému účtu, který byl původně nakonfigurován."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Výběr měřidel",
+        "description": "Vyberte používaná měřidla. Stávající výběr je zaškrtnutý. Uložení přidá vybraná zařízení a senzory a odstraní nevybraná. Pokud se načtení nezdařilo, odešlete formulář znovu.",
+        "data": {
+          "meters": "Používaná měřidla"
+        }
+      }
+    },
+    "error": {
+      "access_restricted": "Portál zamítl přístup k tomuto účtu.",
+      "invalid_auth": "Uživatelské jméno nebo heslo bylo odmítnuto.",
+      "cannot_connect": "Nelze se připojit k portálu. Odešlete formulář znovu.",
+      "invalid_response": "Portál vrátil neočekávanou odpověď. Jeho API se mohlo změnit.",
+      "rate_limited": "Portál omezuje počet požadavků. Před dalším pokusem chvíli počkejte.",
+      "no_meters": "Nebyla nalezena žádná podporovaná aktivní měřidla vody nebo tepla. Ověřte přístup a odešlete formulář znovu.",
+      "select_meters": "Vyberte alespoň jedno měřidlo.",
+      "invalid_selection": "Vyberte pouze měřidla z dostupného seznamu."
+    },
+    "abort": {
+      "reauth_required": "Přihlaste se znovu pomocí výzvy integrace a poté znovu otevřete konfiguraci.",
+      "unique_id_mismatch": "Portál vrátil jiný účet. Přihlaste se k původně nakonfigurovanému účtu."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "reading": {"name": "Stav měřidla"},
+      "last_reading": {"name": "Poslední odečet"},
+      "information": {"name": "Informace o měřidle"}
+    }
+  },
+  "selector": {
+    "meter_type": {
+      "options": {
+        "cold": "Studená voda",
+        "hot": "Teplá voda",
+        "cal": "Měřič tepla"
+      }
+    }
+  }
+}

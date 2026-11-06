@@ -1,0 +1,13 @@
+{
+  "domain": "odectyvodomeru",
+  "name": "Odecty vodomeru",
+  "codeowners": [
+    "@f0x052"
+  ],
+  "config_flow": true,
+  "documentation": "https://git.home.redfoxstudio.sk/fox/ha-odectyvodomeru",
+  "integration_type": "service",
+  "iot_class": "cloud_polling",
+  "requirements": [],
+  "version": "0.5.0"
+}
