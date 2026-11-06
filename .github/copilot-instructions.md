@@ -303,6 +303,13 @@ python3.14 -m venv .venv
 .venv/bin/ruff format --check .
 ```
 
+GitHub Actions runs these checks in the `CI` workflow on pull requests targeting
+`main` and on pushes to `main`. The `Tests and lint` job uses Python 3.14 and
+installs `requirements-dev.txt` without substituting dependency versions.
+Keep its job name stable: the `Protect main` ruleset requires this check before
+merging, including for the repository owner. Review bypass does not bypass CI.
+Actions are pinned to full commit SHAs and the workflow token is read-only.
+
 The development dependencies target Home Assistant 2026.10.4. The initial local
 checks used 2026.10.0b4 because the available package mirror did not contain the
 target release and public package downloads were unavailable. Login and restart
